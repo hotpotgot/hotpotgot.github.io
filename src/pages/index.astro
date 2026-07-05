@@ -4,9 +4,11 @@ import Base from "../layouts/Base.astro";
 
 <Base title="Guo Qi (郭奇)">
   <section>
-    <!-- TODO: replace tagline and bio with your own -->
-    <h1>Guo Qi (郭奇)</h1>
-    <p class="tagline">Your title or one-line description goes here.</p>
+    <!-- TODO: replace bio with your own -->
+    <h1>Guo Qi <span class="zh-name">郭奇</span></h1>
+    <p class="tagline">
+      A son, a husband, a father, a PhD, and a life-long learner.
+    </p>
     <p>
       A short bio: who you are, what you work on, and what you care about.
       Two or three sentences is plenty — link to anything worth linking to,
@@ -20,5 +22,12 @@ import Base from "../layouts/Base.astro";
   .tagline {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
+  }
+
+  .zh-name {
+    font-family: "Xingkai SC", "STXingkai", "华文行楷", "Zhi Mang Xing",
+      "Kaiti SC", KaiTi, cursive;
+    font-weight: normal;
+    font-size: 1.15em;
   }
 </style>

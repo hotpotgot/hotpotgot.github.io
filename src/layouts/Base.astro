@@ -20,6 +20,13 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <!-- 行楷-style web font subset to just the characters 郭奇, as a
+         fallback for visitors without a local Xingkai font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&text=%E9%83%AD%E5%A5%87&display=swap"
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -29,9 +36,9 @@ const {
     <footer>
       <hr />
       <p>
-        © {new Date().getFullYear()} Guo Qi ·
-        <a href="mailto:guoqicauchy@gmail.com">Email</a> ·
-        <a href="https://github.com/hotpotgot">GitHub</a>
+        © {new Date().getFullYear()} Guo Qi&nbsp;·&nbsp;<a
+          href="mailto:guoqicauchy@gmail.com">Email</a
+        >&nbsp;·&nbsp;<a href="https://github.com/hotpotgot">GitHub</a>
       </p>
     </footer>
   </body>
